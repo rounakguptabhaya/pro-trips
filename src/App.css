@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #222f3e;
+  color: rgb(255, 255, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  height: 20vh;
+  width: 5vw;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: absolute;
+  top: 32vh;
+}
+
+.header a {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.workplace {
+  width: 92vw;
+  position: relative;
+  left: 14vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.total {
+  font-size: 70px;
+}
+
+.trips {
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.trips span {
+  font-size: 35px;
+}
+
+.trips span svg {
+  font-size: 15px;
+}
+
+.home {
+  position: relative;
+  top: -15vh;
+}
+
+.trip {
+  display: flex;
+  flex-direction: column;
+  width: 27vw;
+  height: 58vh;
+  justify-content: space-evenly;
+}
+
+.headAT {
+  font-size: xxx-large;
+}
+
+.trip :is(:is(input[type=date], input[type=text]), select) {
+  height: 6vh;
+  background: transparent;
+  border: 2px solid white;
+  padding: 0 2vh;
+  color: white;
+}
+
+.submitAT {
+  text-decoration: none;
+  border: 2px solid white;
+  color: white;
+  padding: 1.5vh;
+  width: 6vw;
+  align-self: center;
+  text-align: center;
+}
+
+.trip select option {
+  background: #222f3e;
+}
+
+table {
+  width: 30vw;
+  text-align: left;
+}
+
+table tr:nth-child(1) th {
+  border-bottom: 3px solid white;
+}
+
+.symbol {
+  font-size: 10px;
+}
+
+.filter {
+  height: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+}
+
+.filter span:hover {
+  cursor: pointer;
+}
+
+.headD {
+  font-size: 70px;
+  position: relative;
+  top: -5vh;
 }
